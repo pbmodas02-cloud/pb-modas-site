@@ -1,108 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <img src="Logo 300x300.png" alt="Logo PB Modas" style="max-width:180px;">
 <meta charset="UTF-8">
 <title>PB MODAS | Loja Masculina Multimarcas</title>
 
 <style>
 body{
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
-}
-
-header{
+    font-family: Arial, Helvetica, sans-serif;
     background:#000;
     color:#fff;
-    padding:20px;
-    text-align:center;
 }
 
-header h1{
-    margin:5px 0;
+/* topo */
+header{
+    background:#000;
+    text-align:center;
+    padding:25px 10px;
+}
+
+header img{
+    max-width:160px;
+}
+
+/* capa */
+.hero{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(180deg,#000,#111);
+}
+
+.hero h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#ccc;
+    max-width:800px;
+    margin:auto;
+}
+
+/* frase impacto */
+.frase{
+    text-align:center;
+    padding:40px 20px;
+    background:#111;
+}
+
+.frase h2{
+    color:#f2c94c;
     font-size:28px;
 }
 
-.banner{
-    background:#111;
-    color:#fff;
+/* sobre */
+.sobre{
+    max-width:1000px;
+    margin:auto;
     padding:40px 20px;
     text-align:center;
 }
 
-.banner h2 span{
-    color:#f5c400;
+.sobre h3{
+    margin-bottom:15px;
+    font-size:24px;
 }
 
-.container{
+.sobre p{
+    color:#ccc;
+    line-height:1.6;
+}
+
+/* galeria */
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    padding:20px;
     max-width:1100px;
     margin:auto;
-    padding:30px 15px;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:20px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:15px;
-}
-
-.grid img{
+.galeria img{
     width:100%;
     border-radius:10px;
 }
 
-/* Clube VIP */
-.vip{
-    background:#000;
-    color:#fff;
-    padding:40px 20px;
-    text-align:center;
-}
-
-.vip h2{
-    color:#f5c400;
-}
-
-/* Rodapé */
+/* rodape */
 footer{
-    background:#111;
-    color:#fff;
     text-align:center;
-    padding:20px;
+    padding:25px 10px;
+    background:#000;
+    color:#777;
     font-size:14px;
 }
 
-/* Botões flutuantes */
-.float-whatsapp,
-.float-instagram{
+/* botao whatsapp */
+.whats{
     position:fixed;
+    bottom:20px;
     right:20px;
-    width:55px;
-    height:55px;
+    background:#25d366;
+    color:#fff;
+    width:60px;
+    height:60px;
     border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
-    color:#fff;
-    font-size:26px;
+    font-size:28px;
     text-decoration:none;
-    z-index:999;
-}
-
-.float-whatsapp{
-    bottom:90px;
-    background:#25D366;
-}
-
-.float-instagram{
-    bottom:20px;
-    background:#C13584;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
 }
 </style>
 </head>
@@ -110,72 +119,51 @@ footer{
 <body>
 
 <header>
-    <h1>PB MODAS</h1>
-    <p>Moda masculina multimarcas • Esporte fino<br>
-    Em parceria com SL OFICIAL</p>
+    <img src="Logo 300x300.png" alt="PB Modas">
 </header>
 
-<section class="banner">
-    <h2>Vista-se para se destacar.<br>
-    <span>PB MODAS</span> é seu novo estilo.</h2>
+<section class="hero">
+    <h1>PB MODAS</h1>
+    <p>
+        Loja masculina multimarcas • Esporte fino • Estilo urbano • Qualidade que você sente no vestir.
+    </p>
 </section>
 
-<div class="container">
-
-<h2 class="section-title">Destaques da loja</h2>
-
-<!-- PARTE DE CIMA – looks no manequim -->
-<div class="grid">
-    <img src="WhatsApp Image 2026-02-23 at 09.42.53.jpeg" alt="">
-    <img src="WhatsApp Image 2026-02-23 at 09.42.53 (1).jpeg" alt="">
-    <img src="WhatsApp Image 2026-02-23 at 09.42.53 (2).jpeg" alt="">
-    <img src="WhatsApp Image 2026-02-23 at 09.42.53 (3).jpeg" alt="">
-</div>
-
-</div>
-
-<section class="vip">
-    <h2>CLUBE VIP PB MODAS</h2>
-    <p>Entre para o nosso clube e aproveite:</p>
-    <p>✔ Promoções exclusivas</p>
-    <p>✔ Ofertas antecipadas</p>
-    <p>✔ Condições especiais</p>
-    <p>✔ Atendimento VIP</p>
-    <p><strong>Cadastre-se agora pelo WhatsApp</strong></p>
+<section class="frase">
+    <h2>Vista-se para se destacar. PB MODAS é o seu novo estilo.</h2>
 </section>
 
-<div class="container">
+<section class="sobre">
+    <h3>Sobre a PB MODAS</h3>
+    <p>
+        A PB MODAS nasceu para atender homens que valorizam estilo, conforto e autenticidade.
+        Trabalhamos com marcas selecionadas e peças que unem elegância, modernidade e ótimo custo-benefício.
+        Nosso compromisso é oferecer uma experiência de compra simples, segura e com atendimento próximo,
+        pensando tanto em quem está chegando agora quanto em quem já confia na nossa loja.
+    </p>
+</section>
 
-<h2 class="section-title">Novidades SL OFICIAL</h2>
+<section class="galeria">
 
-<!-- PARTE DE BAIXO – imagens novas (camisetas e bermudas) -->
-<div class="grid">
-    <img src="WhatsApp Image 2026-02-24 at 10.36.49.jpeg" alt="">
-    <img src="WhatsApp Image 2026-02-24 at 10.36.49 (1).jpeg" alt="">
-    <img src="WhatsApp Image 2026-02-24 at 10.36.49 (2).jpeg" alt="">
-    <img src="WhatsApp Image 2026-02-24 at 10.36.49 (3).jpeg" alt="">
-</div>
+    <!-- TROQUE ou adicione suas fotos aqui -->
+    <img src="WhatsApp Image 2026-02-11 at 12.12.39.jpeg">
+    <img src="WhatsApp Image 2026-02-23 at 09.42.52 (1).jpeg">
+    <img src="WhatsApp Image 2026-02-23 at 09.42.53 (1).jpeg">
+    <img src="WhatsApp Image 2026-02-23 at 09.42.53.jpeg">
 
-</div>
+</section>
 
 <footer>
-📍 Rua Eliane Nunes Ramalho, nº 76 – Vila Santa Lúcia<br>
-Próximo ao Ângela<br><br>
-📲 WhatsApp: (11) 98550-4664<br>
-📸 Instagram: @_pbmoda02
+    PB MODAS © 2026 • Loja masculina multimarcas
 </footer>
 
-<a class="float-whatsapp"
-   href="https://wa.me/5511985504664"
-   target="_blank">🟢</a>
-
-<a class="float-instagram"
-   href="https://instagram.com/_pbmoda02"
-   target="_blank">📷</a>
+<a class="whats" 
+   href="https://wa.me/5511985504664" 
+   target="_blank">💬</a>
 
 </body>
-
 </html>
+
 
 
 
